@@ -11,7 +11,6 @@ async function displayGif(q){
         newGif.src = res.data.data[Math.floor(Math.random() * res.data.data.length)].images.downsized.url;
         display.append(newGif);
         
-        console.log("bug test");
     }
     catch (e.message) {
         alert("Try searching another term");
