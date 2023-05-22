@@ -12,7 +12,7 @@ async function displayGif(q){
         display.append(newGif);
         
     }
-    catch (e.message) {
+    catch {
         alert("Try searching another term");
     }
 };
