@@ -12,7 +12,7 @@ async function displayGif(q){
         display.append(newGif);
         
     }
-    catch {
+    catch (e) {
         alert("Try searching another term");
     }
 };
@@ -21,7 +21,7 @@ const form = document.querySelector('#searchForm');
 const display = document.querySelector('#gifContainer');
 const remove = document.querySelector('#deleteForm');
 
-form.addEventListener('submit', function (e){
+form.addEventListener('submit', function(e){
     // passing query to api
     e.preventDefault();
     const input = document.querySelector('input');
