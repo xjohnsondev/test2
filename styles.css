@@ -1,0 +1,12 @@
+.container-fluid {
+    background-color: black;
+    padding-bottom: 800px;
+}
+
+img {
+    width: 280px;
+    height: 280px;
+    margin: 80px 15px -40px;
+    filter: drop-shadow(3px 2px 4px rgb(48, 47, 47))
+}
+
