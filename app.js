@@ -13,7 +13,7 @@ async function displayGif(q){
         
         console.log("bug test");
     }
-    catch (e.message) {
+    catch () {
         alert("Try searching another term");
     }
 };
