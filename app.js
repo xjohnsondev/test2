@@ -1,10 +1,15 @@
 
-async function displayGif(q){
+async function displayGif(query){
     // validates if a gif for query exists in giphy database
     try{
         // accessing giphy api and searching
         const api_key = 'lfPjsFeR9rJf4IB0rsWoKkmEay0xZwOD';
-        let res = await axios.get(`http://api.giphy.com/v1/gifs/search`, { params: { q, api_key } });
+        let res = await axios.get(`http://api.giphy.com/v1/gifs/search`, { 
+            params: { 
+                q : query, 
+                api_key : api_key, 
+            } 
+        });
 
         // adding random gif to the window
         let newGif = document.createElement('img');
