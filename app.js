@@ -6,8 +6,8 @@ async function displayGif(query){
         const api_key = 'lfPjsFeR9rJf4IB0rsWoKkmEay0xZwOD';
         let res = await axios.get(`http://api.giphy.com/v1/gifs/search`, { 
             params: {
-                "q" : query,
-                "api_key" : api_key,
+                q : query,
+                api_key : api_key,
             }
     });
        
